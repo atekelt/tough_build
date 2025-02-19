@@ -69,7 +69,7 @@
 
 
     // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
+    $('[]').counterUp({
         delay: 10,
         time: 2000
     });
