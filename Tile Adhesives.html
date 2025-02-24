@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="/img/favicon.png" rel="icon">
+    <link href="img/favicon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,56 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Default styles */
+.dropdown-menu {
+  display: none;
+}
+
+/* Show dropdown on hover for larger screens */
+@media (min-width: 768px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
+  /* Submenu should appear on the right */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+  }
+
+  /* Show submenu on hover */
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* For small screens - Expand menus inside */
+@media (max-width: 767px) {
+  .dropdown-menu {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    display: none;
+    position: static;
+    width: 100%;
+  }
+
+  .dropdown-submenu.open .dropdown-menu {
+    display: block;
+  }
+}
+
+    </style>
 </head>
 
 <body>
@@ -116,7 +166,7 @@
                         </ul>
                       </div>
                     
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
@@ -136,60 +186,45 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 py-5">
         <div class="container">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Tile Adhesives</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb text-uppercase">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Tile Adhesives</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 text-center">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">Get In Touch</h6>
-                    <h1 class="mb-4">Contact For Any Questions</h1>
-                    <p class="mb-4">We’re always happy to hear from you and are here to help whenever you need us. Your questions and feedback are important to us, so please don’t hesitate to reach out. We look forward to assisting you! <a href="/files/TOUGH PPT PDF NEW.pdf">Download Now</a>.</p>
-                    <iframe class="position-relative w-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.7193239718085!2d43.12854517651775!3d11.58154000519645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x162306d39c1be5dd%3A0xa4bb4b5cc17a1c18!2sDjibouti%20Free%20Zone!5e1!3m2!1sen!2set!4v1740025261684!5m2!1sen!2set"
-                        frameborder="0" style="height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="bg-light p-5 h-100 d-flex align-items-center">
-                        <ul class="list-group w-100">
-                            <li class="list-group-item"><p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i><b>Head Office</b></p></li>
-                            <li class="list-group-item"><ol class="list-group list-group-flush">
-                                <li class="list-group-item ps-5">PK 23, 1km from China Free Zone, Djibouti</li>
-                              </ol></li>
-                            <li class="list-group-item"><p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i><b>Phone</b></p></li>
-                            <li class="list-group-item"><ol class="list-group list-group-flush">
-                                <li class="list-group-item ps-5">+25377783030 </li>
-                              </ol></li>
-                            <li class="list-group-item"><p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i><b>Whatsapp</b></p></li>
-                            <li class="list-group-item"><ol class="list-group list-group-flush">
-                                <li class="list-group-item ps-5">+251707053777</li>
-                              </ol></li>
-                            <li class="list-group-item"><p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i><b>E-mail</b></p></li>
-                            <li class="list-group-item"><ol class="list-group list-group-flush">
-                                <li class="list-group-item ps-5"> info@TBCM.com</li>
-                                <li class="list-group-item ps-5"> Bader@TBCMcom.com</li>
-                              </ol></li>
-                          </ul>
-                    </div>
-                </div>
+            <div class="row g-4 text-center py-5">
+                <h6 class="text-secondary text-uppercase">Tile Adhesives</h6>
             </div>
+            <div class="row flex-wrap">
+                <div class="col-md-auto pb-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/img/Finishing Products.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tile Adhesive</h5>
+                          <hr width="70%" class="mx-auto">
+                          <p class="card-text">TA
+                            10 TA 20 TA 30 High quality
+                            tile adhesives for all types of
+                            Tiles and applications</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-outline-info" href="#" download>
+                                Download <i class="fa fa-download"></i>
+                              </a>
+                        </div>
+                      </div>
+                </div>
+              </div>
         </div>
     </div>
-    <!-- Contact End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
