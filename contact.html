@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="/img/favicon.png" rel="icon">
+    <link href="img/favicon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,124 +30,171 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      /* Default styles */
+.dropdown-menu {
+display: none;
+}
+
+/* Show dropdown on hover for larger screens */
+@media (min-width: 768px) {
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Submenu should appear on the right */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+}
+
+/* For small screens - Expand menus inside */
+@media (max-width: 767px) {
+.dropdown-menu {
+  display: block;
+  position: static;
+  width: 100%;
+}
+
+.dropdown-submenu .dropdown-menu {
+  display: none;
+  position: static;
+  width: 100%;
+}
+
+.dropdown-submenu.open .dropdown-menu {
+  display: block;
+}
+}
+
+  </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light d-none d-lg-block p-3">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-4 col-md-12 text-center mt-auto text-lg-start">
-                <a href="" class="navbar-brand m-0 p-0 my-auto">
-                    <img src="./img/logo.png" width="20%" style="display:inline;float: left; margin-right: 1rem;" alt="">
-                </a>
-                <a href="" class="navbar-brand m-0 p-0 my-auto">
-                    <h3 class="text-primary m-1 my-auto">Tough Build</h3>
-                    <small class="text-primary pe-2 my-auto">Building Perfection</small>
-                </a>
-            </div>
-            <div class="col-lg-8 col-md-12 text-end">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
-                    <p class="m-0">PK 23, Infront Of China Free Zone, Djibouti</p>
-                </div>
-                <a href="mailto:info@TBCM.com"><a href="mailto:info@TBCM.com"><div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="far fa-envelope-open text-primary me-2"></i>
-                    <p class="m-0">info@TBCM.com</p>
-                </div></a></a>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid nav-bar bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
-            <a href="" class="navbar-brand d-flex align-items-left m-0 p-0 d-lg-none d-inline col-8">
-                <img src="./img/logo.png" width="30%" class="d-inline" alt="">
+</div>
+<!-- Spinner End -->
+ <!-- Topbar Start -->
+ <div class="container-fluid bg-light d-none d-lg-block p-3">
+    <div class="row align-items-center top-bar">
+        <div class="col-lg-4 col-md-12 text-center mt-auto text-lg-start">
+            <a href="" class="navbar-brand m-0 p-0 my-auto">
+                <img src="./img/logo.png" width="20%" style="display:inline;float: left; margin-right: 1rem;" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav me-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <div class="dropdown">
-                        <a href="product.html" data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
-                            class="dropdown-toggle nav-item nav-link" type="button" id="dropdownMenuButton"
-                            data-mdb-toggle="dropdown" aria-expanded="false" >Products</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="/Concrete admixture.html">Concrete Admixture </a></li>
-                          <li class="dropdown-submenu">
-                            <a class="dropdown-item" href="#">Finishing materials  &raquo;</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./Tile Adhesives.html">Tile Adhesives</a></li>
-                              <li><a class="dropdown-item" href="./Tile grouts.html">Tile grouts </a></li>
-                              <li><a class="dropdown-item" href="./Putty.html">Putty </a></li>
-                              <li><a class="dropdown-item" href="./Bonding agent SBR.html">Bonding agent SBR </a></li>
-                              <li><a class="dropdown-item" href="./Decorative plasters.html">Decorative plasters</a></li>
-                              <li><a class="dropdown-item" href="./Repairing mortars.html">Repairing mortars</a></li>
-                            </ul>
-                          </li>
-                          <li class="dropdown-submenu">
-                            <a class="dropdown-item" href="#">Coming Soon &raquo;</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./Paints.html">Paints </a></li>
-                              <li><a class="dropdown-item" href="./Epoxy coatings.html">Epoxy coatings </a></li>
-                              <li><a class="dropdown-item" href="./Waterproofing.html">Waterproofing </a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                </div>
-                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
-                        <i class="bi bi-whatsapp fa-2x text-primary"></i>
-                    </div>
-                    <a href="https://wa.me/+0025370753777"><div class="ms-3">
-                        <p class="mb-1 text-white">Contact US</p>
-                        <h5 class="m-0 text-secondary">+251707053777</h5>
-                    </div></a>
-                </div>
+            <a href="" class="navbar-brand m-0 p-0 my-auto">
+                <h3 class="text-primary m-1 my-auto">Tough Build</h3>
+                <small class="text-primary pe-2 my-auto">Building Perfection</small>
+            </a>
+        </div>
+        <div class="col-lg-8 col-md-12 text-end">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                <p class="m-0">PK 23, Infront Of China Free Zone, Djibouti</p>
             </div>
+            <a href="mailto:info@TBCM.com"><a href="mailto:info@TBCM.com"><div class="h-100 d-inline-flex align-items-center me-4">
+                <i class="far fa-envelope-open text-primary me-2"></i>
+                <p class="m-0">info@TBCM.com</p>
+            </div></a></a>
+            <div class="h-100 d-inline-flex align-items-center">
+                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid nav-bar bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+        <a href="" class="navbar-brand d-flex align-items-left m-0 p-0 d-lg-none d-inline col-8">
+            <img src="./img/logo.png" width="30%" class="d-inline" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <div class="dropdown">
+                  <a href="product.html" data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
+                      class="dropdown-toggle nav-item nav-link" type="button" id="dropdownMenuButton"
+                      data-mdb-toggle="dropdown" aria-expanded="false" >Products</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="/Concrete admixture.html">Concrete Admixture </a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Finishing materials  &raquo;</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Tile Adhesives.html">Tile Adhesives</a></li>
+                        <li><a class="dropdown-item" href="./Tile grouts.html">Tile grouts </a></li>
+                        <li><a class="dropdown-item" href="./Putty.html">Putty </a></li>
+                        <li><a class="dropdown-item" href="./Bonding agent SBR.html">Bonding agent SBR </a></li>
+                        <li><a class="dropdown-item" href="./Decorative plasters.html">Decorative plasters</a></li>
+                        <li><a class="dropdown-item" href="./Repairing mortars.html">Repairing mortars</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Coming Soon &raquo;</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Paints.html">Paints </a></li>
+                        <li><a class="dropdown-item" href="./Epoxy coatings.html">Epoxy coatings </a></li>
+                        <li><a class="dropdown-item" href="./Waterproofing.html">Waterproofing </a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+            </div>
+            <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                    <i class="bi bi-whatsapp fa-2x text-primary"></i>
+                </div>
+                <a href="https://wa.me/+0025370753777"><div class="ms-3">
+                    <p class="mb-1 text-white">Contact US</p>
+                    <h5 class="m-0 text-secondary">+251707053777</h5>
+                </div></a>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 py-5">
+    <div class="container">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Products</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb text-uppercase">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Products</li>
+            </ol>
         </nav>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 py-5">
-        <div class="container">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
+</div>
+<!-- Page Header End -->
 
     <!-- Contact Start -->
     <div class="container-xxl py-5">
@@ -209,10 +256,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Opening Hours</h4>
-                    <h6 class="text-light">Monday - Friday:</h6>
-                    <p class="mb-4">09.00 AM - 09.00 PM</p>
-                    <h6 class="text-light">Saturday - Sunday:</h6>
-                    <p class="mb-0">09.00 AM - 12.00 PM</p>
+                    <h6 class="text-light">Sunday - Thursday:</h6>
+                    <p class="mb-4"> 08.00 am - 05.00 pm</p>
+                    <h6 class="text-light">Saturday:</h6>
+                    <p class="mb-0">08.00 AM - 01.00 PM</p>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <h4 class="text-light mb-4">Products</h4>
