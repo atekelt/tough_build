@@ -323,6 +323,12 @@ display: none;
 
 
     <script>
+     window.addEventListener("pageshow", function () {
+  const navbarCollapse = document.getElementById("navbarCollapse");
+  if (navbarCollapse.classList.contains("show")) {
+    navbarCollapse.classList.remove("show");
+  }
+});
     document.addEventListener("DOMContentLoaded", function () {
   const navbarCollapse = document.getElementById("navbarCollapse");
 
