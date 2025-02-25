@@ -288,6 +288,14 @@
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
+  const navbarCollapse = document.getElementById("navbarCollapse");
+
+  // Ensure the navbar is collapsed when the page loads
+  if (navbarCollapse.classList.contains("show")) {
+    navbarCollapse.classList.remove("show");
+  }
+
+  // Handle submenu clicks for mobile
   const submenus = document.querySelectorAll(".dropdown-submenu > a");
 
   submenus.forEach((menu) => {
